@@ -14,7 +14,7 @@ import tech.ian.watchStore.entity.ModeloEntity;
 import tech.ian.watchStore.service.ModeloService;
 
 @RestController
-@RequestMapping("/marca/modelo")
+@RequestMapping("/modelo")
 public class ModeloController {
 
     @Autowired
@@ -22,7 +22,6 @@ public class ModeloController {
 
     @PostMapping("/")
     public ResponseEntity<ModeloEntity> create(@Valid @RequestBody ModeloDto dto) {
-
 
         return ResponseEntity.status(HttpStatus.CREATED).body(service.execute(dto));
     }
