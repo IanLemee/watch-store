@@ -22,6 +22,6 @@ public class ModeloEntity {
     @JoinColumn(name="marca_id", insertable = false, updatable = false)
     private MarcaEntity marcaEntity;
 
-    @Column(name = "marca_id")
+    @Column(name = "marca_id", nullable = false)
     private UUID marcaId;
 }
