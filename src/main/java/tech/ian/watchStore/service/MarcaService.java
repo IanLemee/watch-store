@@ -20,7 +20,8 @@ public class MarcaService {
         this.repository.findByName(dto.name()).ifPresent((marcaEntity) -> {
             throw new ProductFoundExeception("Produto ja existe");
         });
-        MarcaEntity marcaEntity = new MarcaEntity();
+
+        var marcaEntity = new MarcaEntity();
         BeanUtils.copyProperties(dto, marcaEntity);
         return this.repository.save(marcaEntity);
     }
