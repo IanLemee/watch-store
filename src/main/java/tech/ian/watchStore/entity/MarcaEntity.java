@@ -18,6 +18,8 @@ public class MarcaEntity {
 
     private String name;
 
+    private String logo;
+
     private String companyHistory;
 
     private String companyFoundingYear;
