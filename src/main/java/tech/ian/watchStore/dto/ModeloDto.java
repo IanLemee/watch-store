@@ -10,5 +10,5 @@ public record ModeloDto(@NotBlank(message = "O Campo deve ser preenchido") Strin
                         @NotBlank(message = "O Campo deve ser preenchido") String releaseDate,
                         @NotNull(message = "O Campo deve ser preenchido") Double price,
                         @NotBlank(message = "O Campo deve ser preenchido") String image,
-                        UUID marcaId){
+                        @NotNull(message = "O Campo deve ser preenchido") UUID marcaId){
 }
