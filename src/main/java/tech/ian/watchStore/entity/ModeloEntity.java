@@ -2,7 +2,9 @@ package tech.ian.watchStore.entity;
 
 import jakarta.persistence.*;
 import lombok.Data;
+import org.hibernate.annotations.CreationTimestamp;
 
+import java.time.LocalDateTime;
 import java.util.UUID;
 
 @Entity(name = "tb_modelo")
@@ -24,4 +26,7 @@ public class ModeloEntity {
 
     @Column(name = "marca_id", nullable = false)
     private UUID marcaId;
+
+    @CreationTimestamp
+    private LocalDateTime createdAt;
 }
