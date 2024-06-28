@@ -8,8 +8,6 @@ import tech.ian.watchStore.entity.MarcaEntity;
 import tech.ian.watchStore.exception.ProductFoundExeception;
 import tech.ian.watchStore.repository.MarcaRepository;
 
-import java.util.Optional;
-
 @Service
 public class MarcaService {
 
