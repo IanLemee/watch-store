@@ -9,4 +9,5 @@ import java.util.UUID;
 public interface MarcaRepository extends JpaRepository<MarcaEntity, UUID> {
 
     Optional<MarcaEntity> findByName(String name);
+
 }
